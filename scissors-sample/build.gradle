@@ -15,8 +15,8 @@ android {
         disable 'InvalidPackage'
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     dexOptions {
@@ -28,7 +28,8 @@ dependencies {
     compile project(':scissors2')
     compile 'com.android.support:appcompat-v7:' + rootProject.ext.supportVersion
     compile 'com.android.support:design:' + rootProject.ext.supportVersion
-    compile 'com.jakewharton:butterknife:7.0.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     compile 'com.squareup.leakcanary:leakcanary-android:1.3.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     // Or Glide
